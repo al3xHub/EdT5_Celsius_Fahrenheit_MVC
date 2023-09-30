@@ -12,6 +12,8 @@ public class Controlador implements WindowListener, ActionListener
 	
 	public Controlador(Vista v, Modelo m)
 	{
+		modelo = m;
+		vista = v;
 		v.ventana.addWindowListener(this);
 		v.btnCelFah.addActionListener(this);
 		v.btnFahCel.addActionListener(this);
